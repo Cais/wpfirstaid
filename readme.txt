@@ -1,1 +1,1 @@
-=== WPFA - Child-Theme of Opus Primus ===
+=== WPFirstAid - Child-Theme of Opus Primus ===

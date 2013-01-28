@@ -10,7 +10,7 @@
  * @author      Edward Caissie <edward.caissie@gmail.com>
  * @copyright   Copyright (c) 2012-2013, Edward Caissie
  *
- * This file is part of WPFA.
+ * This file is part of WPFirstAid, a Child-Theme of Opus Primus.
  *
  * WPFA is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2, as published by the
@@ -53,21 +53,3 @@ if ( ! function_exists( 'wpfa_opus_primus_enqueue_scripts' ) ) {
     }
 }
 add_action( 'wp_enqueue_scripts', 'wpfa_opus_primus_enqueue_scripts', 11 );
-
-
-/**
- * WPFirstAid Header
- * Add logo before Opus Primus header
- *
- * @subpackage  WPFirstAid
- * @since       0.1
- *
- * @uses        get_stylesheet_directory_uri
- * @internal used with action hook opus_primus_before_header
- */
-function wpfirstaid_header() { ?>
-    <div id="header-logo">
-        <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/images/WPFA-Logo.png'; ?>" />
-    </div> <!-- #header-logo -->
-<?php }
-add_action( 'opus_before_header', 'wpfirstaid_header' );
