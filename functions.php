@@ -49,6 +49,7 @@ if ( ! function_exists( 'wpfa_opus_primus_enqueue_scripts' ) ) {
     function wpfa_opus_primus_enqueue_scripts() {
         /** Enqueue Theme Stylesheets */
         wp_enqueue_style( 'WPFA-Opus-Primus', get_stylesheet_directory_uri() . '/wpfa-opus-primus.css', array(), wp_get_theme()->parent()->get( 'Version' ), 'screen' );
+        wp_enqueue_style( 'WPFA-Opus-Primus', get_stylesheet_directory_uri() . '/wpfa-media-queries.css', array(), wp_get_theme()->parent()->get( 'Version' ), 'screen' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'wpfa_opus_primus_enqueue_scripts', 11 );
