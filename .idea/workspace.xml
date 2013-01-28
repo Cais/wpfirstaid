@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34cfa0a5-e80d-4e46-b04a-6972ffe2f419" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wpfa-media-queries.css" afterPath="$PROJECT_DIR$/wpfa-media-queries.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wpfa-opus-primus.css" afterPath="$PROJECT_DIR$/wpfa-opus-primus.css" />
     </list>
     <ignored path="wpfirstaid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +38,8 @@
         <option value="$PROJECT_DIR$/wpfa-opus-primus.css" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/wpfa-media-queries.css" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -120,12 +116,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../wp-includes" />
+    <property name="options.lastSelected" value="web.server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../opus-primus" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="PublishConfig">
+  <component name="PublishConfig" serverName="WPFA" serverId="9bf43f02-b2e0-4176-8a1f-2cce73661cfc">
     <servers>
       <server id="239aa8fb-f286-4a7d-942b-5468cdb1d69b">
         <serverdata>
@@ -144,8 +140,34 @@
       <server id="9bf43f02-b2e0-4176-8a1f-2cce73661cfc">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" />
+            <mapping deploy="/wp-content/themes/wpfirstaid" local="$PROJECT_DIR$" web="/wp-content/themes/wpfirstaid" />
+            <mapping deploy="/wp-admin" local="$PROJECT_DIR$/../../../wp-admin" web="/wp-admin" />
+            <mapping deploy="/wp-includes" local="$PROJECT_DIR$/../../../wp-includes" web="/wp-includes" />
+            <mapping deploy="/wp-content/themes/opus-primus" local="$PROJECT_DIR$/../opus-primus" web="/wp-content/themes/opus-primus" />
           </mappings>
+          <excludedPaths>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="C:\wamp\www\Opus_Primus\wp-admin" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="path" value="/wp-admin" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="C:\wamp\www\Opus_Primus\wp-includes" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="path" value="/wp-includes" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="C:\wamp\www\Opus_Primus\wp-content\themes\opus-primus" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="path" value="/wp-content/themes/opus-primus" />
+            </ExcludedPath>
+          </excludedPaths>
         </serverdata>
       </server>
       <server id="f22a4b3c-3e9d-4d89-9d29-cd056ef8c0df">
@@ -210,13 +232,18 @@
       <created>1359332930802</created>
       <updated>1359332930802</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactored to use custom header image">
+      <created>1359335652137</created>
+      <updated>1359335652137</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -273,7 +300,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct editor artifacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored to use custom header image" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -290,6 +317,7 @@
     <MESSAGE value="Real Initial Commit" />
     <MESSAGE value="Synchronizing commit?" />
     <MESSAGE value="Correct editor artifacts" />
+    <MESSAGE value="Refactored to use custom header image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -302,15 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="75" selection-start="2082" selection-end="2082" vertical-scroll-proportion="-35.307693">
-          <folding>
-            <element signature="e#6#1162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wpfa-media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.0">
@@ -318,16 +337,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+        <state line="54" column="75" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.88325655">
+          <folding>
+            <element signature="e#6#1162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="22" selection-start="25" selection-end="25" vertical-scroll-proportion="0.025110783">
           <folding />
         </state>
       </provider>
