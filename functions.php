@@ -4,11 +4,11 @@
  * Where the magic happens ...
  *
  * @package     OpusPrimus
- * @subpackage  WPFA
+ * @subpackage  WPFirstAid
  * @since       0.1
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2012, Edward Caissie
+ * @copyright   Copyright (c) 2012-2013, Edward Caissie
  *
  * This file is part of WPFA.
  *
@@ -38,7 +38,7 @@ if ( ! function_exists( 'wpfa_opus_primus_enqueue_scripts' ) ) {
      * WPFirstAid Opus Primus Enqueue Scripts
      * Use to enqueue the Child-Theme stylesheet after the Parent-Theme
      *
-     * @subpackage  WPFA
+     * @subpackage  WPFirstAid
      * @since       0.1
      *
      * @uses        get_stylesheet_uri
@@ -56,18 +56,18 @@ add_action( 'wp_enqueue_scripts', 'wpfa_opus_primus_enqueue_scripts', 11 );
 
 
 /**
- * WPFA Header
+ * WPFirstAid Header
  * Add logo before Opus Primus header
  *
- * @subpackage  WPFA
+ * @subpackage  WPFirstAid
  * @since       0.1
  *
  * @uses        get_stylesheet_directory_uri
  * @internal used with action hook opus_primus_before_header
  */
-function wpfa_header() { ?>
+function wpfirstaid_header() { ?>
     <div id="header-logo">
         <img alt="" src="<?php echo get_stylesheet_directory_uri() . '/images/WPFA-Logo.png'; ?>" />
     </div> <!-- #header-logo -->
 <?php }
-add_action( 'opus_primus_before_header', 'wpfa_header' );
+add_action( 'opus_before_header', 'wpfirstaid_header' );
