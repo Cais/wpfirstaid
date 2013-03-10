@@ -1,0 +1,2 @@
+=== WP First Aid Changelog ===
+* Theme is not publicly available at this time ... use VCS for changelog details
