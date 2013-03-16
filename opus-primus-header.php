@@ -43,7 +43,11 @@ global $opus_headers; ?>
 
     <div class="masthead">
 
-        <?php $opus_headers->show_custom_header_image_block(); ?>
+        <div id="header-image">
+
+            <?php $opus_headers->show_custom_header_image_block(); ?>
+
+        </div><!-- #header-image -->
 
         <div id="header-text">
 
