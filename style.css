@@ -3,12 +3,12 @@ Theme Name: WPFirstAid
 Theme URI: http://wpfirstaid.com/
 Description: A Child-Theme of the WordPress Framework Theme Opus Primus
 Template: opus-primus
-Template Version: 1.1
-Version: 1.0
+Template Version: 1.3
+Version: 1.1
 Author: Edward Caissie
 Author URI: http://edwardcaissie.com/
 WordPress Required Version: 3.4
-WordPress Tested Version: 3.5.1
+WordPress Tested Version: 4.1
 Tags: black, white, gray, light, one-column, two-column, three-column, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, featured-images, flexible-headers, post-formats, sticky-post, threaded-comments, translation-ready
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -21,7 +21,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @since       0.1
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2012-2013, Edward Caissie
+ * @copyright   Copyright (c) 2012-2014, Edward Caissie
  *
  * This file is part of WPFirstAid, a Child-Theme of Opus Primus.
  *
@@ -45,5 +45,3 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * The license for this software can also likely be found here:
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
-
-@import url( '../opus-primus/style.css' );

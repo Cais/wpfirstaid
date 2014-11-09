@@ -34,49 +34,58 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-/** Call global class variables */
-global $opus_headers; ?>
+/** Create OpusPrimusHeader class object */
+$opus_headers = new OpusPrimusHeader(); ?>
 
-<header>
+	<header>
 
-    <?php do_action( 'opus_header_top' ); ?>
+		<?php do_action( 'opus_header_top' ); ?>
 
-    <div class="masthead">
+		<div class="masthead">
 
-        <div id="header-image">
+			<div id="header-image">
 
-            <?php $opus_headers->show_custom_header_image_block(); ?>
+				<?php $opus_headers->show_custom_header_image_block(); ?>
 
-        </div><!-- #header-image -->
+			</div>
+			<!-- #header-image -->
 
-        <div id="header-text">
+			<div id="header-text">
 
-            <?php
-            $opus_headers->site_title_block();
-            $opus_headers->site_description_block(); ?>
+				<?php
+				$opus_headers->site_title_block();
+				$opus_headers->site_description_block(); ?>
 
-        </div><!-- #header-text -->
+			</div>
+			<!-- #header-text -->
 
-    </div><!-- .masthead -->
+		</div>
+		<!-- .masthead -->
 
-    <div id="header-widgets">
-        <?php get_sidebar( 'header' ); ?>
-    </div><!-- #header-widgets -->
+		<div id="header-widgets">
+			<?php get_sidebar( 'header' ); ?>
+		</div>
+		<!-- #header-widgets -->
 
-    <?php
-    /** Add empty hook before primary navigation */
-    do_action( 'opus_nav_before' ); ?>
+		<?php
+		/** Add empty hook before primary navigation */
+		do_action( 'opus_nav_before' ); ?>
 
-    <nav>
-        <?php global $opus_navigation; $opus_navigation->primary_menu(); ?>
-    </nav><!-- End navigation section -->
+		<nav>
+			<?php
+			$opus_navigation = new OpusPrimusNavigation();
+			$opus_navigation->primary_menu(); ?>
+		</nav>
+		<!-- End navigation section -->
 
-    <?php
-    /** Add empty hook after primary navigation */
-    do_action( 'opus_nav_after' );
+		<?php
+		/** Add empty hook after primary navigation */
+		do_action( 'opus_nav_after' );
 
-    do_action( 'opus_header_bottom' ); ?>
+		do_action( 'opus_header_bottom' ); ?>
 
-</header><!-- End header section -->
+	</header><!-- End header section -->
 
-<?php global $opus_breadcrumbs; $opus_breadcrumbs->show_the_trail();
+<?php
+$opus_breadcrumbs = new OpusPrimusBreadcrumbs();
+$opus_breadcrumbs->show_the_trail();
