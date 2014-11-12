@@ -8,7 +8,7 @@
  * @since       0.1
  *
  * @author      Edward Caissie <edward.caissie@gmail.com>
- * @copyright   Copyright (c) 2012-2013, Edward Caissie
+ * @copyright   Copyright (c) 2012-2014, Edward Caissie
  *
  * This file is part of WPFirstAid, a Child-Theme of Opus Primus.
  *
@@ -41,15 +41,16 @@ if ( ! function_exists( 'wpfa_opus_primus_enqueue_scripts' ) ) {
 	 * @subpackage  WPFirstAid
 	 * @since       0.1
 	 *
-	 * @uses        get_stylesheet_uri
+	 * @uses        get_stylesheet_directory_uri
+	 * @uses        get_template_directory_uri
 	 * @uses        parent
 	 * @uses        wp_enqueue_style
 	 * @uses        wp_get_theme
 	 */
 	function wpfa_opus_primus_enqueue_scripts() {
 		/** Enqueue Theme Stylesheets */
+		wp_enqueue_style( 'Parent-Theme-Opus-Primus', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->parent()->get( 'Version' ), 'screen' );
 		wp_enqueue_style( 'WPFA-Opus-Primus', get_stylesheet_directory_uri() . '/wpfa-opus-primus.css', array(), wp_get_theme()->parent()->get( 'Version' ), 'screen' );
-		wp_enqueue_style( 'WPFA-Media-Queries', get_stylesheet_directory_uri() . '/wpfa-media-queries.css', array(), wp_get_theme()->parent()->get( 'Version' ), 'screen' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wpfa_opus_primus_enqueue_scripts', 11 );
